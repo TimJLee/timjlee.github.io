@@ -5,7 +5,6 @@ date: 2019-10-25
 excerpt: "First day First Experience"
 tags: [first,disqus,test]
 comments: true
-project: true
 ---
 
 2019-10-26

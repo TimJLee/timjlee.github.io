@@ -2,7 +2,7 @@
 layout: post
 title: "블로그에 첫 발을 내딛다"
 date: 2019-10-25
-excerpt: "First day First Experience"
+excerpt: "First post"
 tags: [first,readability, test]
 comments: true
 ---
