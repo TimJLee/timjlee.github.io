@@ -10,7 +10,7 @@ comments: true
 
 ## DB과제
 <figure>
-    <img src="/images/Er.png">
+    <a href="https://github.com/TimJLee/timjlee.github.io/blob/master/images/Er.PNG?raw=true"><img src="https://github.com/TimJLee/timjlee.github.io/blob/master/images/Er.PNG?raw=true"></a>
     <figcaption>ER Diagram of open market database</figcaption>
 </figure>
 
