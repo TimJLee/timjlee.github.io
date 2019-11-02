@@ -4,7 +4,7 @@ bio:                'By a desire for knowledge, not results.'
 description:        "By a desire for knowledge, not results."
 reading_time:       true
 words_per_minute:   200
-logo:               'assets/img/profile.jpg'
+logo:               'assets/img/profile.png'
 background:         'assets/img/placeholder-big.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
