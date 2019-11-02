@@ -25,7 +25,12 @@ layout: compress
                     </p><!-- /.entry-reading-time -->
                     {% endif %}
                     {% if page.project %}
-                    <a class="btn zoombtn" href="{{site.url}}/projects/">
+                      {% if page.django %}
+                      <a class="btn zoombtn" href="{{site.url}}/django/">
+                      {% endif %}
+                      {% if page.spring %}
+                      <a class="btn zoombtn" href="{{site.url}}/spring/">
+                      {% endif %}
                     {% else %}
                     <a class="btn zoombtn" href="{{site.url}}/posts/">
                     {% endif %}
