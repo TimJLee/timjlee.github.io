@@ -89,18 +89,19 @@
 				<a href="#">Posts</a>
 				<ul class="dl-submenu">
 					<li><a href="{{ site.url }}/posts/">All Posts</a></li>
-					<li><a href="{{ site.url }}/tags/">All Tags</a></li>
+					<!--<li><a href="{{ site.url }}/tags/">All Tags</a></li>-->
 				</ul>
 			</li>
 			<li>
 				<a href="#">Projects</a>
 				<ul class="dl-submenu">
 					<li><a href="{{ site.url }}/projects/">All Projects</a><li>
+					<hr class="hr-line">
 					<li><a href="{{ site.url }}/projects/django/">Django</a></li>
 					<li><a href="{{ site.url }}/projects/spring/">Spring</a></li>
 				</ul>
 			</li>
-			<!--
+
 			{% for link in site.data.navigation %}
 		    {% if link.url contains 'http' %}
 		        {% assign domain = '' %}
@@ -109,6 +110,6 @@
 		    {% endif %}
 		    <li><a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" rel="noopener noreferrer"{% endif %}>{{ link.title }}</a></li>
 		  {% endfor %}
-			-->
+
 		</ul><!-- /.dl-menu -->
 	</nav><!-- /.dl-menuwrapper -->

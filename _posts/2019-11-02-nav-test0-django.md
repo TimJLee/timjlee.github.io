@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Nav test"
+title: "Nav test0 - django"
 date: 2019-11-02
 excerpt: "testing navigation bar"
 tags: [Blog,Test]

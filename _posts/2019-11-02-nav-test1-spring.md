@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Nav test"
+title: "Nav test1 -spring"
 date: 2019-11-02
 excerpt: "testing navigation bar"
 tags: [Blog,Test]
