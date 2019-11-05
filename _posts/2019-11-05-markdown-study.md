@@ -38,7 +38,7 @@ __hi__
 [1]: https://github.com
 [참조 링크]: https://naver.com "네이버로 이동"
 
-~~~Markdown
+~~~ css
 **hi**
 __hi__
 ~~hi~~
