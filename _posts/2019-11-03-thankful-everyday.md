@@ -1,5 +1,6 @@
 ---
 layout: post
+published: false
 title: "매일을 감사하자"
 date: 2019-11-03
 excerpt: "일기"
