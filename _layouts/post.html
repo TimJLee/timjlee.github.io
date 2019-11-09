@@ -24,6 +24,7 @@ layout: compress
                       {% include read-time.html %}
                     </p><!-- /.entry-reading-time -->
                     {% endif %}
+                    <!--
                     {% if page.project %}
                       {% if page.django %}
                       <a class="btn zoombtn" href="{{site.url}}/projects/django/">
@@ -34,6 +35,8 @@ layout: compress
                     {% else %}
                     <a class="btn zoombtn" href="{{site.url}}/posts/">
                     {% endif %}
+                    -->
+                    <a class="btn zoombtn" onclick='history.go(-1); return false;'>
                         <i class="fa fa-chevron-left"></i>
                     </a>
                 </div>
