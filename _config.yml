@@ -1,11 +1,11 @@
 # Site
-title:              Tim Jaeyong Lee
+title:              TIM
 bio:                'By a desire for knowledge, not results.'
 description:        "By a desire for knowledge, not results."
 reading_time:       true
 words_per_minute:   200
 logo:               'assets/img/profile.png'
-background:         'assets/img/placeholder-big.jpg'
+background:         'assets/img/background2.png'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
 url:                https://timjlee.github.io
