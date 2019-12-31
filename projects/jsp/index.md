@@ -1,6 +1,6 @@
 ---
 layout: jsp
 title: Jsp Project
-excerpt: "JSP Project"
+excerpt: "Jsp Project"
 comments: true
 ---
