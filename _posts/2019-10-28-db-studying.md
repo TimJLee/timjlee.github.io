@@ -56,8 +56,8 @@ c_s_date date not null,
 c_s_join varchar2(3) not null,
 constraint ac_no_pk primary key(c_no),
 constraint ac_dajo_fk foreign key(c_s_date,c_s_join) references service(s_date,s_join));
-//constraint ac_da_fk foreign key(c_s_date) references service(s_date),
-//constraint ac_jo_fk foreign key(c_s_join) references service(s_join));
+-- constraint ac_da_fk foreign key(c_s_date) references service(s_date),
+-- constraint ac_jo_fk foreign key(c_s_join) references service(s_join));
 ~~~
 
 <br><br>
@@ -74,8 +74,8 @@ p_s_date date not null,
 p_s_join varchar2(3) not null,
 constraint ac_no_pk1 primary key(p_no,p_date),
 constraint ac_dajo_fk1 foreign key(p_s_date,p_s_join) references service(s_date,s_join));
-//constraint ac_da_fk1 foreign key(p_s_date) references service(s_date),
-//constraint ac_jo_fk1 foreign key(p_s_join) references service(s_join));
+-- constraint ac_da_fk1 foreign key(p_s_date) references service(s_date),
+-- constraint ac_jo_fk1 foreign key(p_s_join) references service(s_join));
 ~~~
 
 <br><br>
@@ -87,8 +87,8 @@ create table delivery(
 d_no decimal(7) not null,
 d_name varchar2(10) not null,
 constraint ac_noname_pk2 primary key(d_no,d_name));
-//constraint ac_no_pk2 primary key(d_no),
-//constraint ac_name_pk2 primary key(d_name));
+-- constraint ac_no_pk2 primary key(d_no),
+-- constraint ac_name_pk2 primary key(d_name));
 ~~~
 
 <br><Br>
@@ -103,8 +103,8 @@ b_p_date date not null,
 constraint ac_buy_pk primary key(b_c_no,b_p_no,b_p_date),
 constraint ac_cno_fk3 foreign key(b_c_no) references customer(c_no),
 constraint ac_pnodate_fk3 foreign key(b_p_no,b_p_date) references product(p_no,p_date));
-//constraint ac_pno_fk3 foreign key(b_p_no) references product(p_no),
-//constraint ac_pdate_fk3 foreign key(b_p_date) references product(p_date));
+-- constraint ac_pno_fk3 foreign key(b_p_no) references product(p_no),
+-- constraint ac_pdate_fk3 foreign key(b_p_date) references product(p_date));
 ~~~
 
 <Br><Br>
