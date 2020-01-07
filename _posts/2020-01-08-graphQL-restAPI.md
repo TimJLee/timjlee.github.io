@@ -1,0 +1,61 @@
+---
+layout: post
+title: "[Jsp Project]자바빈 액션"
+date: 2019-12-31
+excerpt: "자바빈 액션"
+tags: [Project,Jsp]
+feature: http://i.imgur.com/Ds6S7lJ.png
+project: true
+jsp: true
+comments: true
+---
+
+## 기존
+[insert_ok2.jsp](https://github.com/TimJLee/jsp_project/blob/master/home/WebContent/book/insert_ok2.jsp) , [find_ok2.jsp](https://github.com/TimJLee/jsp_project/blob/master/home/WebContent/book/find_ok2.jsp) 등과 같이 개발하는 경우는 없다. 오류가 났을 때 어디서 오류가 났는지 명확하지 않다. 디자이너의 잘못인가, 프로그래머의 잘못인가 를 따질 수 없게 된다. 이를 해결하기 위해 자바빈 액션을 이용한다.
+
+## 자바빈 액션
+1. 자바빈을 사용하게 되면 디자인 부분과 로직부분을 나누어서 개발을 할 수 있음   
+  * 디자이너는 디자인만, 프로그래머는 프로그램만 나누어서 개발을 하기 위해 만든 방식
+2. 설계규약  
+  * 멤버변수마다 별도의 (table 관련 필드값과 연관된) get/set 메소드가 존재해야 한다.(메소드명은 멤버변수와 일치해야 함) ex) DTO  
+  * get 메소드의 매개변수(파라미터)는 존재하면 안됨.  
+  * set 메소드는 반드시 하나 이상의 매개변수 존재해야 함.  
+  * beans 컴포넌트의 속성은 반드시 읽기 또는 쓰기가 가능해야 함. ex) public 으로 만들어야 함.  
+  * 생성자는 매개변수(파라미터)가 존재하지 않아야 한다. 즉, 디폴트 생성자가 존재해야 한다(불러낼 수 있어야 하므로).
+
+### 사용되는 태그
+<p>
+<b>자바빈 객체를 생성해 주기 위한 태그</b><br>
+
+{% highlight html %}
+<jsp:useBean id="빈이름" class="자바빈 클래스 명" scope="사용범위" />
+{% endhighlight %}
+
+ > scope : page,request,session,application
+</p>
+
+<p>
+<b>자바빈 클래스의 속성값을 설정하기 위한 태그</b><br>
+{% highlight html %}
+<jsp:setProperty name="빈이름" property="속성명" value="설정할 속성값"/>
+{% endhighlight %}
+</p>
+
+<p>
+<b>자바빈 클래스의 속성값을 가져오기 위한 태그</b><br>
+{% highlight html %}
+<jsp:getProperty name="빈이름" property="속성명" />
+{% endhighlight %}
+</p>
+
+### DTO와 DAO의 개념
+   * DTO
+     * Data(Table) Transfer Object(객체)
+     * 테이블의 구조와 똑같은 객체를 만들어 줌  
+   * DAO
+     * Data Access Object
+     * 테이블의 자료를 Access 하는 객체를 만들어 줌
+
+
+## 프로젝트 링크
+<div markdown="0"><a href="https://github.com/TimJLee/jsp_project" class="btn btn-info">jsp_project</a></div>
